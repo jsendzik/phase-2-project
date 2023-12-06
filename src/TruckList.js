@@ -1,26 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 
 function TruckList () {
 
     const [trucks, setTrucks] = useState([])
 
-    function getTrucks() {
+    useEffect(() => {
         fetch("http://localhost:3000/trucks")
         .then(r => r.json())
         .then((res)=> setTrucks(res))
-    }
+    }, [])
+        
 
     return (
         <div>
-            <button onClick={getTrucks}>Show Trucks</button>
             {trucks.map((truck) => {
                 return (
-                    <p>
-                        <h3>{truck.name}</h3>
-                        <img src={truck.image}/>
+                    <div key={truck.id}>
+                        <p>{truck.name}</p>
+                        <img src={truck.image} alt={truck.name}/>
                         <label>Starting Price: ${truck.price}</label>
-                    </p>
+                    </div>
 
                 )
             })}
