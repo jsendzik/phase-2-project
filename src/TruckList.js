@@ -9,11 +9,12 @@ function TruckList () {
         fetch("http://localhost:3000/trucks")
         .then(r => r.json())
         .then((res)=> setTrucks(res))
+        .catch((error) => alert(error))
     }, [])
         
 
     return (
-        <div>
+        <>
             {trucks.map((truck) => {
                 return (
                     <div key={truck.id}>
@@ -24,7 +25,7 @@ function TruckList () {
 
                 )
             })}
-        </div>
+        </>
     )
 }
 
