@@ -8,7 +8,6 @@ function App() {
       NavBar
     </header>
     <div className="App">
-      2023 Ford F150 Models
       <Home />
     </div>
     </>
