@@ -2,6 +2,7 @@ import Home from "./Home";
 import About from "./About";
 import Models from "./Models";
 
+
 const routes = [
     {
         path: "/",
@@ -14,6 +15,10 @@ const routes = [
     {
         path: "/models",
         element: <Models />
+    }
+    {
+        path: "/create",
+        element: <Create />
     }
 ]
 
