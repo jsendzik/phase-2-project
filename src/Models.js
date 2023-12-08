@@ -8,6 +8,7 @@ function Models () {
             <header>
                 <NavBar />
             </header>
+            <h1 className="title">Models</h1>
             <main>
                 <TruckList />
             </main>
