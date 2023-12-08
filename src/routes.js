@@ -15,7 +15,7 @@ const routes = [
     {
         path: "/models",
         element: <Models />
-    }
+    },
     {
         path: "/create",
         element: <Create />

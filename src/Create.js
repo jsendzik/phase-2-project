@@ -1,10 +1,15 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 function Create () {
     return (
         <div>
+            <header>
+                <NavBar />
+            </header>
             <form>
-                input
+                <input />
+                
             </form>
         </div>
     )
