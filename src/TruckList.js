@@ -14,7 +14,7 @@ function TruckList () {
         
 
     return (
-        <>
+        <div className="par">
             {trucks.map((truck) => {
                 return (
                     <div key={truck.id}>
@@ -25,7 +25,7 @@ function TruckList () {
 
                 )
             })}
-        </>
+        </div>
     )
 }
 
