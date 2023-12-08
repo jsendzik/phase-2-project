@@ -5,14 +5,17 @@ function NavBar () {
     return (
         <nav>
             <NavLink
-             to="/"
-             >Home
+             to="/">
+                Home
              </NavLink>
              <NavLink
-             to="/about"
-             >About
+             to="/about">
+                About
              </NavLink>
-             <NavLink>???</NavLink>
+             <NavLink
+             to="/models">
+                Models
+             </NavLink>
         </nav>
     )
 }
