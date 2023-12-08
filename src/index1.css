@@ -1,0 +1,35 @@
+.nav-link {
+    display: inline-block;
+    width: 200px;
+    padding: 5px;
+    background: rgb(5, 5, 101);
+    color: white;
+    font-size: 20px;
+
+}
+
+.title {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(5, 5, 101);
+    width: 630px;
+    margin: auto;
+}
+
+.wpar {
+    color: white;
+    font-size: 16px;
+    background-color: rgb(5, 5, 101);
+    width: 630px;
+    margin: auto;
+}
+
+body {
+    background-image: url(https://pictures.dealer.com/j/jackkisseefordfd/0478/b94dd6f82036593cb33a99e77914b3d8x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
