@@ -51,3 +51,12 @@ body {
 .logo {
     margin-top: 600px;
 }
+
+.form {
+    background-color: rgb(5, 5, 101);
+    color: white;
+    padding-top: 10px;
+    margin: auto;
+    opacity: 75%;
+    width: 600px;
+}
