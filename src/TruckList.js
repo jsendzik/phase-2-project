@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import { useState } from "react";
 
-function TruckList () {
+function TruckList ({trucks, setTrucks}) {
 
-    const [trucks, setTrucks] = useState([])
+  
 
     useEffect(() => {
         fetch("http://localhost:3000/trucks")

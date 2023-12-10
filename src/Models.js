@@ -1,8 +1,11 @@
 import React from "react";
 import NavBar from "./NavBar";
 import TruckList from "./TruckList";
+import { useState } from "react";
 
 function Models () {
+    const [trucks, setTrucks] = useState([])
+
     return (
         <>
             <header>
@@ -10,7 +13,7 @@ function Models () {
             </header>
             <h1 className="title">Models</h1>
             <main>
-                <TruckList />
+                <TruckList trucks={trucks} setTrucks={setTrucks}/>
                 <h1 className="title">Create</h1>
                 <form className="form">
                 <div>
