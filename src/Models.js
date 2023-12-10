@@ -34,7 +34,7 @@ function Models () {
             headers: {
                 "Content-Type": "application/json",
               },
-              body: JSON.stringify({
+            body: JSON.stringify({
                 name,
                 price,
                 image: url,
@@ -59,9 +59,10 @@ function Models () {
             <h1 className="title">Models</h1>
             <main>
                 <TruckList trucks={trucks} setTrucks={setTrucks}/>
-                <h1 className="title">Create</h1>
+                
 
                 <form className="form" onSubmit={handleSubmit}>
+                    <h1 className="title">Create</h1>
                     <div>
                         <label>Truck Model Name: </label>
                         <input id="name" type="text" placeholder="Example: XLT, Lariat, ..etc" onChange={handleNameChange} value={name}/>

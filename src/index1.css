@@ -6,6 +6,7 @@
     font-size: 24px;
     opacity: 75%;
     border: 1px dotted black;
+    border-radius: 20px;
 
 }
 
@@ -16,6 +17,8 @@
     width: 600px;
     margin: auto;
     opacity: 75%;
+    border: 1px dotted black;
+    border-radius: 20px;
 }
 
 .wpar {
@@ -35,7 +38,7 @@
     margin: auto;
     columns: 4;
     border: 1px dotted black;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 body {
@@ -57,6 +60,7 @@ body {
     color: white;
     padding-top: 10px;
     margin: auto;
-    opacity: 75%;
     width: 600px;
+    border-radius: 20px;
+    border: 1px dotted black;
 }
