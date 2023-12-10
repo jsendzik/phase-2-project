@@ -22,12 +22,6 @@ function NavBar () {
              className="nav-link">
                 Models
              </NavLink>
-
-             <NavLink
-             to="/create"
-             className="nav-link">
-                Create
-             </NavLink>
         </nav>
     )
 }

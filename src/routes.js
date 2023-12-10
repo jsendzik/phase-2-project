@@ -1,7 +1,6 @@
 import Home from "./Home";
 import About from "./About";
 import Models from "./Models";
-import Create from "./Create";
 
 const routes = [
     {
@@ -16,10 +15,6 @@ const routes = [
         path: "/models",
         element: <Models />
     },
-    {
-        path: "/create",
-        element: <Create />
-    }
 ]
 
 export default routes
