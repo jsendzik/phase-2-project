@@ -1,16 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-function TruckList ({trucks, setTrucks}) {
+function TruckList ({trucks}) {
 
   
 
-    useEffect(() => {
-        fetch("http://localhost:3000/trucks")
-        .then(r => r.json())
-        .then((res)=> setTrucks(res))
-        .catch((error) => alert(error))
-    }, [])
-        
+
 
     return (
         <div className="par">
