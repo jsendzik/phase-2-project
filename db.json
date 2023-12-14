@@ -47,12 +47,6 @@
       "name": "RAPTOR",
       "image": "https://www.vdm.ford.com/content/dam/vdm_ford/live/en_us/ford/nameplate/f-150f-150/2023/collections/3_2/22_frd_f150_scrw_5_5ft_rptr_801a_cdor_356x180.png/jcr:content/renditions/cq5dam.web.1280.1280.png",
       "price": "76,775"
-    },
-    {
-      "name": "FX4",
-      "price": "$15,000",
-      "image": "https://svg-files.pixelied.com/ce81a38e-9891-48f4-9b0b-c80f359a7328/thumb-256px.png",
-      "id": 9
     }
   ]
 }
