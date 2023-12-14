@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import TruckList from "./TruckList";
 import { useState, useEffect } from "react";
+import TruckForm from "./TruckForm";
 
 function Models () {
     const [trucks, setTrucks] = useState([])
@@ -59,24 +60,15 @@ function Models () {
             <h1 className="title">Models</h1>
             <main>
                 <TruckList trucks={trucks} setTrucks={setTrucks}/>
-                
-
-                <form className="form" onSubmit={handleSubmit}>
-                    <h2>Create</h2>
-                    <div>
-                        <label>Truck Model Name: </label>
-                        <input id="name" type="text" placeholder="Example: XLT, Lariat, ..etc" onChange={handleNameChange} value={name}/>
-                    </div>
-                    <div>
-                        <label>Image URL: </label>
-                        <input id="image" type="text" placeholder="URL" onChange={handleImageChange} value={url}/>
-                    </div>
-                    <div>
-                        <label>Starting Price: </label>
-                        <input id="price" type="text" placeholder="Example: $29,999" onChange={handlePriceChange} value={price}/>
-                    </div>
-                    <button type="submit">Create Truck</button>
-                </form>
+                <TruckForm 
+                    handleSubmit={handleSubmit} 
+                    handleImageChange={handleImageChange}
+                    handleNameChange={handleNameChange}
+                    handlePriceChange={handlePriceChange}
+                    name={name}
+                    url={url}
+                    price={price}
+                    />
             </main>
         </>
     )
